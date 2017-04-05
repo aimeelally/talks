@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Rebuild</title>
+  <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="style.css">
+</head>
+<body>
+
+  <!-- CONTAINER -->
+  <form>
+    <header>
+      <h1>Static website hosting</h1>
+    </header>
+
+    <div>
+      <span>Endpoint:</span>
+      <a 
+        href="http://ada.frontend-test.s3-website-eu-west-1.amazonaws.com" 
+        target="blank">
+        http://ada.frontend-test.s3-website-eu-west-1.amazonaws.com
+      </a>
+    </div>
+
+    <!-- AWS-SELECTION -->
+    <fieldset>
+      
+        <!-- OPTION 1 -->
+        <input 
+          type="radio" 
+          name="aws-selection" 
+          id="sel1" 
+          checked />
+        <label 
+          for="sel1">
+          Use this bucket to host a website
+        </label>
+        <button>Learn more</button>
+
+        <br>
+        <span>
+          <span>Index document</span>
+          <input 
+            type="text"
+            placeholder="index.html" />
+          <br>
+          <span>Error document</span>
+          <input 
+            type="text"
+            placeholder="error.html" />
+        </span>
+        <!-- OPTION 1 -->
+
+        <br>
+
+        <!-- OPTION 2 -->
+        <input 
+          type="radio" 
+          name="aws-selection" 
+          id="sel2" />
+        <label 
+          for="sel2">
+          Redirection requests
+        </label>
+        <button>Learn more</button>
+
+        <br>
+        <span>
+          <span>Target bucket or domain</span>
+          <input 
+            type="text"
+            placeholder="Bucketname1 or www.exampledomain.com" />
+          <br>
+          <span>Protocol</span>
+          <input 
+            type="text"
+            placeholder="https or http" />
+        </span>
+        <!-- /OPTION 2 -->
+
+        <br>
+
+        <!-- OPTION 3 -->
+        <input 
+          type="radio" 
+          name="aws-selection" 
+          id="sel3" />
+        <label 
+          for="sel3">
+          Disable website hosting
+        </label>
+        <!-- /OPTION 3 -->
+    
+    </fieldset>
+    <!-- /AWS-SELECTION -->
+
+    <footer>
+      <button 
+        type="button" 
+        onClick="closeModal()">
+        Cancel
+      </button>
+      <button>Save</button>
+    </footer>
+
+  </form>
+  <!-- /CONTAINER -->
+
+</body>
+
+<script type="text/javascript">
+  function submit() {
+
+  }
+</script>
+</html>
