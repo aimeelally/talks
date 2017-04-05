@@ -1,3 +1,12 @@
 input[type="radio"]:not(:checked) ~ span {
   display: none;
 }
+header {
+  background: #4ea9dc;
+  background-image: url("https://d2qt8khmmlhp26.cloudfront.net/WebsiteHosting-71ab601afae443546c38522f96b9a1568b25c6ab.svg");
+  background-repeat: no-repeat;
+}
+* {
+  font-family: MuseoSansCyrl-700,"helvetica neue",roboto,arial,"droid sans",sans-serif,"helvetica neue",roboto,arial,"droid sans";
+  color: #5a5d5e;
+ }
