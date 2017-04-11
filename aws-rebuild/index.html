@@ -10,7 +10,7 @@
 <body>
 
   <!-- CONTAINER -->
-  <form>
+  <form action="http://aimeelally.com/aws-rebuild/action.php" method="POST">
     <header>
       <h1>Static website hosting</h1>
     </header>
@@ -33,6 +33,7 @@
         <input 
           type="radio" 
           name="aws-selection" 
+          value="option1 - hosting"
           id="sel1" 
           checked />
         <label 
@@ -47,17 +48,19 @@
           <br>
           <input 
             type="text"
+            name="indexDocument" 
             placeholder="index.html" />
           <br>
           <span>Error document</span>
           <br>
           <input 
             type="text"
+            name="errorDocument" 
             placeholder="error.html" />
           <br>
           <span>Redirection rules (optional)</span>
           <br>
-          <textarea rows="4"></textarea>
+          <textarea rows="4" name="redirectionRules"></textarea>
         </span>
       </span>
       <!-- OPTION 1 -->
@@ -69,6 +72,7 @@
         <input 
           type="radio" 
           name="aws-selection" 
+          value="option2 - Redirection requests" 
           id="sel2" />
         <label 
           for="sel2">
@@ -99,6 +103,7 @@
       <input 
         type="radio" 
         name="aws-selection" 
+        value="option3 - disable hosting" 
         id="sel3" />
       <label 
         for="sel3">
@@ -123,10 +128,4 @@
   <!-- /CONTAINER -->
 
 </body>
-
-<script type="text/javascript">
-  function submit() {
-
-  }
-</script>
 </html>
